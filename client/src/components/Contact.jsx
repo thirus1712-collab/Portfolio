@@ -14,6 +14,8 @@ import {
 } from 'lucide-react';
 
 export default function Contact() {
+  const API_URL =
+    import.meta.env.VITE_API_URL || "https://portfolio-production-2b3b.up.railway.app";
   const [formData, setFormData] = useState({
     name: '',
     email: '',
